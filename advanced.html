@@ -10,7 +10,7 @@
 
 	<script>
 
-	// Example1
+	//Intermediate Exercise 1 | Compare two numbers
 
 		var marksStudent = [
 		["Martin",76],
@@ -125,7 +125,7 @@ for (i=0;i<marksStudent.length;i++){
 		}
 
 
-//Example FIZZBUZZ
+//Intermediate Exercise 2 | FizzBuzz
 /*
 Create a JavaScript program which iterates the integers from 1 to 100. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
@@ -154,28 +154,38 @@ Buzz
 
 etc. */
 
-document.write("FIZZBUZZ");
+document.write("FIZZBUZZ- SPIEL <br>");
 
 /* irgendwas passt hier nicht.. stürzt immer ab :-( 
 
-for (i=1; i<10; i++){
+*/
 
-	if ((i==(i%5)&&(i==(i%3)){
-		document.write("FIZZBUZZ <br>")
-	}else if (i==(i%3){
+console.log(15%3);
+
+
+for (i=1; i<=100; i++){
+
+/*
+document.write("i = " + i + " i%5=" + i%5 + " i%3: " + i%3 + "<br>");
+*/
+
+	if ((i%5==0)&&(i%3 == 0)){
+		document.write("FIZZBUZZ <br>");
+	}
+	else if (i%3==0){
 		document.write("FIZZ <br>");
 	}
-	else if (i==(i%5){
+	else if (i%5==0){
 		document.write("BUZZ <br>");
 	}
 	else {
-		document.write(i + "<br");
-	}
+		document.write(i + "<br>");
+	} 
 
 
 }
 
-*/
+
 
 
 
