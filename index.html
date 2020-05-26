@@ -7,19 +7,70 @@
 </head>
 <body>
     <script>
+
+        /*EXERCISE 1
+        Basic Exercise 1 | Temperature v1.0
+        Create a program that according to the temperature will provide you with the information, whether the weather is cold or moderate. This program should generate a different random number every time, that should be between -5c and 25c. If the temperature is between -5c and 10c print "The weather is cold" otherwise print "The weather is moderate".
+        */
         Math.random();
         var zufallszahl =  Math.floor(Math.random()*31) - 5
         //var randomN = Math.floor(Math.random() * (31)-5 + m
+        //To generate a random integer from m to n, here is the code
+        //var randomN = Math.floor(Math.random() * (n-m+1)) + m
         console.log(zufallszahl);
         if(zufallszahl > 10) {
-            document.write("Das Wetter ist mässig");
+            document.write("Das Wetter ist mässig <br>");
         }
         else{
-            document.write("Das Wetter ist kalt");
+            document.write("Das Wetter ist kalt <br> ");
         }
 
 
 
+        /*Basic Exercise 2 | Highest value in an array
+        Create a program to find the highest value in an array. 
+        E.g. If we have the following values 1, 7, -3, 9 we should only get the highest value, number 9.*/
+
+        var Nummerhaufen = [1,7,-3,9];
+
+        var hoechsteZahl = 0;
+
+        //erster Versuch: Ausgabe des Arrays pro Element
+        //console.log(Nummerhaufen[0],Nummerhaufen[1],Nummerhaufen[2], Nummerhaufen[3]);
+
+        console.log(Nummerhaufen.length);
+
+        //zum Testen mit Ausgabe
+        /*for (i=0;i<Nummerhaufen.length; i++){
+     
+
+            if(Nummerhaufen[i] > hoechsteZahl){
+
+                hoechsteZahl = Nummerhaufen[i];
+
+            }else{
+                document.write("Zahl" + Nummerhaufen[i] + " nicht höher");
+            }
+
+            document.write(Nummerhaufen[i] + " höchste Zahl " + hoechsteZahl + "<br>");
+        }*/
+
+        //jetzt einfach Ausgabe der höchsten Zahl
+        for (i=0;i<Nummerhaufen.length; i++){
+     
+
+            if(Nummerhaufen[i] > hoechsteZahl){
+
+                hoechsteZahl = Nummerhaufen[i];
+
+            }else{
+               // document.write("Zahl" + Nummerhaufen[i] + " nicht höher");
+            }
+
+            //document.write(Nummerhaufen[i] + " höchste Zahl " + hoechsteZahl + "<br>");
+        }
+
+        document.write("Die höchste Zahl ist " + hoechsteZahl + "<br>");
 
     </script>
     
