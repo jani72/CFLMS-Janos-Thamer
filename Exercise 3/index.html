@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="Temperatur"></div>
+            <div id="Foto"></div>
+            <div id="Text"></div>
+        
+        </div>
+    </div>
+    
+<script>
+     Math.random();
+     var zufallszahl =  Math.floor(Math.random()*46) - 5
+     //var randomN = Math.floor(Math.random() * (31)-5 + m
+     //To generate a random integer from m to n, here is the code
+            //var randomN = Math.floor(Math.random() * (n-m+1)) + m
+            console.log(zufallszahl);
+            document.getElementById("Temperatur").innerHTML = zufallszahl +"°";
+
+
+            if((zufallszahl > 10)&&(zufallszahl< 32)) {
+                document.getElementById("Text").innerHTML = "Das Wetter ist mässig <br>";
+                document.getElementById("Foto").innerHTML = "<img src=\"moderate weather.png\">";
+            }
+            else if(zufallszahl >= 32){
+                document.getElementById("Text").innerHTML = "Das Wetter ist heiss";
+                document.getElementById("Foto").innerHTML = "<img src=\"weather-sunny-512.webp\">";
+            }
+            else{
+                document.getElementById("Text").innerHTML = "Das Wetter ist kalt <br> ";
+                document.getElementById("Foto").innerHTML = "<img src=\"weather cold.png\">";
+                }
+
+</script>
+    
+</body>
+</html>

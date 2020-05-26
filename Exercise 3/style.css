@@ -1,0 +1,28 @@
+#wrapper{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    background-color:white;
+    width: 480px;
+    height: 600px;
+}
+
+#Temperatur{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#Foto{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#Text{
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+}
